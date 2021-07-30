@@ -1,0 +1,15 @@
+.button {
+    font-family: $poppins;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    &--chico {
+        padding: 4px 10px;
+        background-color: $tangerine;
+        font-size: $fs-x-small;
+        border-radius: 3px;
+        &:hover {
+            background-color: $white;
+        }
+    }
+}

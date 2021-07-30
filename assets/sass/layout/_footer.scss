@@ -1,0 +1,63 @@
+.footer {
+    background-color: $black;
+    padding: 3rem;
+    color: $white;
+    font-family: $ubuntu;
+    margin-top: 20px;
+    &__copy {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        span {
+            font-family: $poppins;
+            font-size: $fs-medium;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+    }
+    &__item {
+        font-size: $fs-medium;
+        margin-left: 20px;
+        a {
+            color: $white;
+        }
+    }
+    &__item:nth-child(4) {
+        margin: 0;
+    }
+}
+
+
+// BREAKPOINT
+@media (max-width: 576px) {
+    .footer {
+        text-align: center;
+        color: $white;
+        &__list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+        }
+        &__item {
+            padding-top: .75rem;
+        }
+       
+        &__item:nth-child(4) {
+            margin: 0;
+        }
+        &__input {
+            border-radius: 3px;
+            padding: 5px;
+            border: none;
+            margin: 0;
+        }
+    }
+}
